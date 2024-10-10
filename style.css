@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    text-align: center;
+    color: #00796b;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.flight-info, .countdown, .status, .bus-schedule {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.flight-info p, .status p {
+    font-size: 1.2em;
+}
+
+#departure-timer, #return-timer {
+    font-size: 1.8em; /* Ajuste no tamanho da fonte */
+    color: #d32f2f;
+    font-weight: bold; /* Negrito para destacar a contagem */
+}
+
+#status {
+    font-size: 1.5em;
+    color: #388e3c;
+}
+
+.bus-schedule ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bus-schedule li {
+    font-size: 1.2em;
+    color: #1976d2;
+    margin: 5px 0;
+}
+
+.plane-animation {
+    position: relative;
+    height: 200px;
+}
+
+.plane {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0% { left: -10%; bottom: 0; }
+    50% { left: 50%; bottom: 50%; }
+    100% { left: 110%; bottom: 0; }
+}
+.locate-flight {
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    background-color: #00796b; /* Cor de fundo */
+    border: none; /* Remover bordas padrão */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none; /* Remover sublinhado */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para efeitos */
+}
+
+.btn:hover {
+    background-color: #004d40; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumentar um pouco o botão ao passar o mouse */
+}
+.hotel-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.hotel-info p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #00796b; /* Cor do texto */
+}
