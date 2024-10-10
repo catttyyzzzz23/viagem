@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações da Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Radar!</h1>
+        
+        <!-- Informações do Voo -->
+        <div class="flight-info">
+            <h2>Informações do Voo:</h2>
+            <p><strong>Número do Voo:</strong> <span id="flight-number">EJU6735</span></p>
+            <p><strong>Voo de Ida:</strong> <span id="departure-time">19:30</span> em <span id="departure-date">11/10/2024</span></p>
+            <p><strong>Chegada:</strong> <span id="chegada-ida">21:15</span></p>
+            <p><strong>Número do Voo:</strong> <span id="flight-number">EJU6736</span></p>
+            <p><strong>Voo de Volta:</strong> <span id="return-time">22:05</span> em <span id="return-date">16/10/2024</span></p>
+            <p><strong>Chegada:</strong> <span id="chegada-volta">23:50</span></p>
+        </div>
+        <!-- Botão para localizar o voo -->
+        <div class="locate-flight">
+            <a href="https://pt.flightaware.com/live/findflight" target="_blank" class="btn">Localizar Voo</a>
+        </div><br>
+
+        <!-- Contagem Regressiva para o Voo de Ida -->
+        <div class="countdown">
+            <h2>Contagem Regressiva para o Voo de Ida:</h2>
+            <p id="departure-timer">00:00:00:00</p>
+        </div>
+
+        <!-- Contagem Regressiva para o Voo de Volta -->
+        <div class="countdown">
+            <h2>Contagem Regressiva para o Voo de Volta:</h2>
+            <p id="return-timer">00:00:00:00</p>
+        </div>
+
+        <!-- Status do Voo -->
+        <div class="status">
+            <h2>Status do Voo:</h2>
+            <p id="status">Preparando para decolar...</p>
+        </div>
+
+        <!-- Horários do Autocarro -->
+        <div class="bus-schedule">
+            <h2>Horários do Autocarro</h2>
+            <ul>
+                <li>Autocarro ida 11/10: 14:15</li>
+                <li> Chegada: 17:00</li>
+                <li>Autocarro volta 17/10: 01:00</li>
+                <li>Chegada a albufeira: 03:45</li>
+            </ul>
+        </div>
+        <!-- Informações do Hotel -->
+        <div class="hotel-info">
+            <h2>Informações do Hotel:</h2>
+            <p><strong>Nome:</strong> INATEL Porto Santo</p>
+            <p><strong>Localização:</strong> Estrada Regional 120, Cabeço, 9400-242 Porto Santo</p>
+        </div>
+
+
+        <!-- Animação do Avião -->
+        <div class="plane-animation">
+            <img src="plane.jpeg" alt="Aviãozinho" class="plane" id="plane">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
